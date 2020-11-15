@@ -1,16 +1,16 @@
 public class CarFactory {
-    public ICar getCar (String driveType) {
+    public ICar getCar (String carType) {
 
-        if (driveType == null) {
+        if (carType == null) {
             return null;
         }
-        if (driveType.equalsIgnoreCase("BMW")) {
+        if (carType.equalsIgnoreCase("BMW")) {
             return new BMW();
 
-        } else if (driveType.equalsIgnoreCase("AUDI")) {
+        } else if (carType.equalsIgnoreCase("AUDI")) {
             return new Audi();
 
-        } else if (driveType.equalsIgnoreCase("MERCEDES")) {
+        } else if (carType.equalsIgnoreCase("MERCEDES")) {
             return new Mercedes();
         }
         return null;
