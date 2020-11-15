@@ -120,4 +120,58 @@ public class ParcAuto {
 
     }
 
+    public void findCar(int registrationNumber){
+        for(ICar car:listCars){
+
+            if(car instanceof BMW){
+                BMW carBMW= (BMW) car;
+                if(carBMW.registrationNumber==registrationNumber){
+                    carBMW.DisplayCharacteristics();
+                    return;
+                }
+            }
+            if(car instanceof Audi){
+                Audi carAudi= (Audi) car;
+                if(carAudi.regisitrationNumber==registrationNumber){
+                    carAudi.DisplayCharacteristics();
+                    return;
+                }
+            }
+            if(car instanceof Mercedes){
+                Mercedes carMercedes= (Mercedes) car;
+                if(carMercedes.regisitrationNumber==registrationNumber){
+                    carMercedes.DisplayCharacteristics();
+                    return;
+                }
+            }
+        }
+    }
+
+    public void setColor(int registrationNumber,String color){
+        for(ICar car:listCars){
+
+            if(car instanceof BMW){
+                BMW carBMW= (BMW) car;
+                if(carBMW.registrationNumber==registrationNumber){
+                    carBMW.color=color;
+                    return;
+                }
+            }
+            if(car instanceof Audi){
+                Audi carAudi= (Audi) car;
+                if(carAudi.regisitrationNumber==registrationNumber){
+                    carAudi.color=color;
+                    return;
+                }
+            }
+            if(car instanceof Mercedes){
+                Mercedes carMercedes= (Mercedes) car;
+                if(carMercedes.regisitrationNumber==registrationNumber){
+                    carMercedes.color=color;
+                    return;
+                }
+            }
+        }
+    }
+
 }
