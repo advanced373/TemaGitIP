@@ -3,6 +3,11 @@ public class Mercedes implements ICar{
     @Override
     public void DisplayCharacteristics() {
         System.out.println("Caracteristicile masinii sunt:\n");
+        System.out.println("Marca: Mercedes;\n");
+        System.out.println("Reg nr:"+regisitrationNumber+";\n");
+        System.out.println("Year:"+year+";\n");
+        System.out.println("HP:"+HP+";\n");
+        System.out.println("Color:"+color+";\n");
     }
 
     public int regisitrationNumber;
