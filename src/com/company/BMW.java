@@ -1,3 +1,6 @@
+
+package com.company;
+
 public class BMW implements ICar{
     public int registrationNumber;
     public int year;
