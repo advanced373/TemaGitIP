@@ -145,6 +145,7 @@ public class ParcAuto {
                 }
             }
         }
+        System.out.println("nu a fost gasita masina cautata");
     }
 
     public void setColor(int registrationNumber,String color){
